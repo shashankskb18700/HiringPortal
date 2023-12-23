@@ -19,6 +19,8 @@
 
 .JobsIndustry:hover {
   border: 2px solid #515052;
-  background-color: #000103;
+  background-color: #000103d0;
+  opacity: 0.3;
+
   transition: 0.5s;
 }

@@ -47,14 +47,20 @@ const JobsApplication = () => {
     console.log("inside doc ref");
     const { setDoc, doc, collection, addDoc } = dbService;
     const userName = authService.getAuth().currentUser.email;
-    await setDoc(doc(dbService.getFirestore(), "Application", userName), {
-      name: name,
-      email: email,
-      resumeLink: resume,
-      expectedCtc: expectedCtc,
-      education: education,
-      interest: interest,
-    });
+
+    await setDoc(
+      doc(dbService.getFirestore(), "Application", userName),
+      {
+        name: name,
+        email: email,
+        resumeLink: resume,
+        expectedCtc: expectedCtc,
+        education: education,
+        interest: interest,
+      },
+      { capital: true },
+      { merge: true }
+    );
 
     NotificationManager.info("Application sent");
   };

@@ -52,8 +52,6 @@ const Home = () => {
     // setArrayId([...arr]);
     // });
     setJobListing(data);
-
-    console.log(jobListing);
   };
   const logout = () => {
     authService.signOut(authService.getAuth());
@@ -63,7 +61,10 @@ const Home = () => {
     <div className="Home">
       <Header />
       <div className="Home-job-industry">
-        <JobsIndustry className="Home-job-industry-child" name={"PRODUCT"} />
+        <JobsIndustry
+          className="Home-job-industry-child PRODUCT"
+          name={"PRODUCT"}
+        />
         <JobsIndustry className="Home-job-industry-child" name={"INTERNET"} />
         <JobsIndustry className="Home-job-industry-child" name={"FINTECH"} />
         <JobsIndustry className="Home-job-industry-child" name={"EDTECH"} />
@@ -76,6 +77,8 @@ const Home = () => {
         <label></label>
       </div>
 
+      <h1>JOB LISTING</h1>
+
       {jobListing.map((val) => (
         <JobsComponent
           name={val.company}
@@ -86,10 +89,6 @@ const Home = () => {
           ctc={val.CTC}
         />
       ))}
-      <button onClick={logout}>logout</button>
-
-      <Link to="/create-jobs">Create Jobs</Link>
-      <Link to="/auth">auth</Link>
     </div>
   );
 };

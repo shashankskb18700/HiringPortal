@@ -13,6 +13,9 @@
   align-items: center;
   justify-content: center;
 }
+a {
+  color: black;
+}
 
 .Header-Home {
   display: flex;

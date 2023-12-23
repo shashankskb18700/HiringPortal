@@ -31,16 +31,20 @@ const Response = () => {
   };
   return (
     <div>
-      {response.map((val) => (
-        <ResponseComponent
-          name={val.name}
-          email={val.email}
-          expectedCtc={val.expectedCtc}
-          education={val.education}
-          resume={val.resumeLink}
-          interest={val.interest}
-        />
-      ))}
+      {response.length != 0 ? (
+        response.map((val) => (
+          <ResponseComponent
+            name={val.name}
+            email={val.email}
+            expectedCtc={val.expectedCtc}
+            education={val.education}
+            resume={val.resumeLink}
+            interest={val.interest}
+          />
+        ))
+      ) : (
+        <div>NO RESPONSE YET ! </div>
+      )}
     </div>
   );
 };

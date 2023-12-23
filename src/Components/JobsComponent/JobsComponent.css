@@ -33,3 +33,13 @@ a {
   justify-content: space-between;
   flex-direction: row;
 }
+
+.JobApplicaton-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  height: 2.5em;
+  background: #ff312e;
+  color: #fffffa;
+}

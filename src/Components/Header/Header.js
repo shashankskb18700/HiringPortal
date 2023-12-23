@@ -18,7 +18,6 @@ const Header = () => {
       },
       []
     );
-    console.log(authService.getAuth().currentUser);
   });
 
   const logout = () => {
@@ -27,8 +26,6 @@ const Header = () => {
     window.location.reload();
     // console.log(authService.getAuth().currentUser);
   };
-
-  console.log(userStatus);
 
   return (
     <div className="Header">
