@@ -1,0 +1,31 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Home-job-industry {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 7em;
+
+  /* width: 70vw; */
+  height: 70vh;
+  /* margin-left: 15vw;
+  margin-right: 15vw; */
+  /* margin-right: 10vw; */
+  align-items: center;
+  justify-content: center;
+  /* align-content: center; */
+  align-self: center;
+  /* justify-content: end; */
+  /* padding-left: 10em;
+  padding-right: 10em; */
+  /* padding: 10em; */
+}
+
+.Home-job-industry-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

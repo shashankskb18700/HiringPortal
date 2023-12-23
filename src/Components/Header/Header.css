@@ -1,0 +1,33 @@
+.Header {
+  display: flex;
+  width: 100vw;
+  height: 6em;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Logo {
+  display: flex;
+  font-family: "Rubik Maps";
+  font-size: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header-Home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.notLogged {
+  display: none;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.Header-Component {
+  cursor: pointer;
+}

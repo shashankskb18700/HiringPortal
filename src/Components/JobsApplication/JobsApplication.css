@@ -1,0 +1,64 @@
+.JobsApplication {
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.JobsApplication-component {
+  width: 80vw;
+  height: 10vw;
+  margin: 3em;
+  padding-left: 0.5em;
+  border: 2px solid black;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.JobsApplication-component input {
+  width: 60%;
+  height: 100%;
+  border-bottom: 2px solid black;
+  padding-left: 0.3em;
+  font-size: 1.7em;
+  font-weight: 300;
+}
+.JobsApplication-component label {
+  width: 30%;
+  color: #fffffa;
+  /* border-bottom: 2px solid black; */
+}
+
+.JobsComponent-jobApplication {
+  display: none;
+}
+
+.JobsApplication-Description {
+  width: 80vw;
+}
+
+.JobsApplicaiton-Button {
+  /* position: absolute; */
+  width: 7em;
+  height: 3em;
+  display: flex;
+  margin-bottom: 3em;
+  /* left: 45%;
+  right: 45%; */
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  background-color: #ff312e;
+  color: #fffffa;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.JobsApplicaiton-Button:hover {
+  background-color: #000103;
+  color: #fffffa;
+  transition: 0.4s;
+}

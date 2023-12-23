@@ -1,0 +1,35 @@
+.JobsComponent {
+  width: 80vw;
+  height: 20vh;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #fffffa;
+  border: 2px solid #000103;
+}
+.JobsComponent-company-details img {
+  width: 3em;
+  height: 3em;
+}
+a {
+  text-decoration: none;
+}
+
+.JobsComponent-company-details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+.JobsComponenet-job-details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}

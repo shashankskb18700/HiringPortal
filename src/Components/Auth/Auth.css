@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Pacifico&family=Poppins:wght@600&family=Rubik+Maps&family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+.Auth {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.Auth-Form {
+  width: 30em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Auth-Input {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Auth-Input input {
+  border: none;
+  width: 20em;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5em;
+}
+
+.user-type {
+  width: 100%;
+  height: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.auth-button {
+  border: none;
+  width: 4rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.auth-button:hover {
+  background-color: grey;
+}
+
+.logo {
+  font-family: "Rubik Maps";
+  font-size: 3.5rem;
+}
+
+@media only screen and(min-width: 400px) {
+  .Auth-Form {
+  }
+}

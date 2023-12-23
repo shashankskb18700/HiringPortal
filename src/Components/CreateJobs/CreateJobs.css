@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,500&family=Pacifico&family=Poppins:wght@600&family=Rubik+Maps&family=Shadows+Into+Light&display=swap");
+
+.CreateJobs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  padding-bottom: 5em;
+
+  /* height: 100vh; */
+}
+
+.CreateJobs-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90vw;
+  height: 3em;
+  background-color: #000103;
+  color: #fffffa;
+  margin: 2em;
+  padding-left: 2em;
+
+  /* padding: 2em; */
+}
+
+.CreateJobs input {
+  width: 70vw;
+  height: 100%;
+  padding-left: 0.1em;
+  border-bottom: 2px solid #000103;
+  border-right: 2px solid #000103;
+  border-top: 2px solid #000103;
+  background-color: #fffffa;
+  caret-color: #ff312e;
+  font-size: 1.5em;
+  color: #ff312e;
+  font-weight: 400;
+
+  /* height: 5rem; */
+}
+.CreateJobs input:focus {
+  outline: none;
+}
+.description {
+  height: 100%;
+}
+.description textarea {
+  width: 70vw;
+  height: 30vh;
+  /* height: 100%; */
+  padding-left: 0.1em;
+  resize: none;
+  border-bottom: 2px solid #000103;
+  background-color: #fffffa;
+  border-right: 2px solid #000103;
+  border-top: 2px solid #000103;
+  caret-color: #ff312e;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #ff312e;
+}
+
+/* textarea:focus,
+input:focus {
+  outline: none;
+  border: none;
+} */
+textarea,
+input {
+  outline: none;
+  border: none;
+}
+
+.CreateJobs-notion {
+  font-family: "Rubik Maps";
+  font-size: 3.3vw;
+}
+
+.CreateJobs-button {
+  position: absolute;
+  width: 7em;
+  height: 3em;
+  left: 45%;
+  right: 45%;
+  border: none;
+  background-color: #ff312e;
+  color: #fffffa;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+.CreateJobs-button:hover {
+  background-color: #000103;
+  color: #fffffa;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 600px) {
+  .CreateJobs-input {
+    display: flex;
+    flex-direction: column;
+  }
+}
